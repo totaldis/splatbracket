@@ -80,7 +80,7 @@ app.all('*', async (c, next) => {
                 <a href="/about">About</a>
               </li>
               <li>
-                <a href="/login">Login</a>
+                <a href="/login">SLogin</a>
               </li>
             </ul>
           </nav>
