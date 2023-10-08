@@ -1,9 +1,28 @@
 .page {
-
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
 }
 
-.setup {
+.choice {
     display: flex;
+    flex: 1;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 1px solid #eee;
+}
+
+.choice:hover, .choice:active {
+    cursor: pointer;
+    color: rgb(255, 0, 255);
+    background-color: rgb(19, 0, 19);
+}
+
+@media (max-width: 700px) {
+    .page {
+        flex-direction: column;
+    }
 }
