@@ -2,6 +2,7 @@ import Link from 'next/link'
 import styles from './page.module.css'
 
 
+
 export default function Home() {
   return (
     <main>
@@ -9,6 +10,9 @@ export default function Home() {
       <nav>
         <Link href="/setup">Start</Link>
       </nav>
+      <aside>
+
+      </aside>
     </main>
   )
 }
