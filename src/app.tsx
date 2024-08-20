@@ -1,4 +1,4 @@
-import { useNavigate } from '@tanstack/react-router'
+import { Outlet, useNavigate } from '@tanstack/react-router'
 import { useState } from 'react'
 
 export function App() {
@@ -36,6 +36,7 @@ export function App() {
           >
             Back to Home
           </button>
+          <Outlet />
         </div>
       )}
     </div>
