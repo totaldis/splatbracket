@@ -5,8 +5,11 @@ export default {
     './src/App.tsx',
   ],
   theme: {
-    extend: {},
+    extend: {
+      textStroke: {
+        'purple': '1px #4C1D95',
+      },
+    },
   },
   plugins: [],
 }
-

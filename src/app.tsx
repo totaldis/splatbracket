@@ -12,20 +12,24 @@ export function App() {
 
   return (
     <div className="h-screen bg-purple-950 text-white">
-      <h1 className="text-4xl py-8">SPLAT BRACKET</h1>
+      <h1 className="text-4xl py-2 pl-4">SPLAT BRACKET</h1>
       {currentScreen === 'home' ? (
         <div className="flex flex-col sm:flex-row h-[calc(100vh-88px)]">
           <button
             onClick={() => handleNavigation('new')}
-            className="flex-1 bg-purple-800 hover:bg-purple-900 text-white font-bold text-2xl transition-colors duration-300"
+            className="flex-1 bg-purple-800 hover:bg-purple-900 font-bold text-6xl transition-colors duration-300"
           >
-            New Bracket
+            <span className="bg-gradient-to-r from-purple-400 to-purple-600 text-transparent bg-clip-text text-stroke-purple">
+              New Bracket
+            </span>
           </button>
           <button
             onClick={() => handleNavigation('load')}
-            className="flex-1 bg-purple-800 hover:bg-purple-900 text-white font-bold text-2xl transition-colors duration-300"
+            className="flex-1 bg-purple-800 hover:bg-purple-900 font-bold text-6xl transition-colors duration-300"
           >
-            Load Bracket
+            <span className="bg-gradient-to-r from-purple-400 to-purple-600 text-transparent bg-clip-text text-stroke-purple">
+              Load Bracket
+            </span>
           </button>
         </div>
       ) : (

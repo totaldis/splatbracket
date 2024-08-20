@@ -6,3 +6,9 @@ body {
   background-color: #14002A;
   color: #fff;
 }
+
+@layer utilities {
+  .text-stroke-purple {
+    -webkit-text-stroke: 1px #4C1D95;
+  }
+}
